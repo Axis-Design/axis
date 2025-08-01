@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
+        // Import Firestore SDK
+        import { getFirestore } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // Firebase configuration for your website
+        const firebaseConfig = {
+            apiKey: "AIzaSyANb02vCJrMUY7vA8yv7RN2G6E2jvvWcaM",
+            authDomain: "axis-26ca7.firebaseapp.com",
+            projectId: "axis-26ca7",
+            storageBucket: "axis-26ca7.firebasestorage.app",
+            messagingSenderId: "402468270608",
+            appId: "1:402468270608:web:f7b6cf1bf5cdb17fb5d095",
+            measurementId: "G-2DHW1JJY4Y"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        // Making Firestore available for the next script block
+        window.db = getFirestore(app);
+    </script>
+</head>
+<body>
+    <div class="transition-overlay"></div>
+
+    <header class="main-header contact-page-header">
+        <div class="container header-container">
+            <div class="header-left">
+                <a href="index.html" class="logo-img-container">
+                    <img src="assets/images/axis.png" alt="Company Logo" class="logo-img">
+                </a>
+            </div>
+            <nav class="navbar-center">
+                <ul class="nav-links">
+                    <li><a href="contact.html" class="active-page-link">CONTACT</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="social-icons">
+                <a href="https://www.facebook.com/share/1CEUHqQ43w/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@axis.design0?_t=ZS-8yUZ4d4mU91&_r=1" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/axisdesign__?igsh=aXB0dXNub20xbGVh&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/201020879511" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2 class="section-title">CONTACT US</h2>
+            <div class="container contact-content">
+                <div class="featured-contact-card">
+                    <h3>Reach Out </h3>
+                    <p class="description">Have a question or a project in mind? We'd love to hear from you. Fill out the form below or reach out to us directly.</p>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>El-Mansoura - University District, behind McDonald's branch</p>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:MA20.designstudio@gmail.com">Axiscompany@gmail.com</a>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>01093664969</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <p id="form-status" class="form-status text-center mt-4"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Axis is a leading company in architectural design, shop drawings, and supervision of finishing works, committed to delivering innovative and high-quality solutions.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: Axiscompany@gmail.com</p>
+                <p>Address:El-Mansoura, Egypt</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                <a href="https://www.facebook.com/share/1CEUHqQ43w/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@axis.design0?_t=ZS-8yUZ4d4mU91&_r=1" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/axisdesign__?igsh=aXB0dXNub20xbGVh&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/201020879511" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Highlight active link in navigation
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinksList = document.querySelectorAll('.nav-links a');
+
+            navLinksList.forEach(link => {
+                const linkHref = link.getAttribute('href').split('/').pop();
+                if (linkHref === currentPage) {
+                    link.classList.add('active-page-link');
+                } else {
+                    link.classList.remove('active-page-link');
+                }
+            });
+        });
+    </script>
+    <script type="module">
+        import { collection, addDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+        
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault(); // Prevent default form submission
+
+                formStatus.textContent = 'جاري الإرسال...';
+                formStatus.className = 'form-status text-center mt-4 text-blue-500';
+
+                // Get form data
+                const formData = {
+                    name: contactForm.name.value,
+                    email: contactForm.email.value,
+                    subject: contactForm.subject.value,
+                    message: contactForm.message.value,
+                    timestamp: new Date()
+                };
+
+                try {
+                    // Make sure Firebase Firestore is initialized
+                    if (window.db) {
+                        const docRef = await addDoc(collection(window.db, "contact_form_submissions"), formData);
+                        console.log("تمت إضافة المستند بالمعرّف: ", docRef.id);
+                        formStatus.textContent = 'Your message has been sent successfully!';
+                        formStatus.className = 'form-status text-center mt-4 text-green-600';
+                        contactForm.reset();
+                    } else {
+                        throw new Error("Firebase Firestore is not initialized. Please check your script in the <head>.");
+                    }
+                } catch (error) {
+                    console.error("Error adding document: ", error);
+                    formStatus.textContent = 'Sorry, there was an error sending. Please try again.';
+                    formStatus.className = 'form-status text-center mt-4 text-red-600';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
